@@ -44,6 +44,7 @@ public class Lambda{
             System.out.println(result);
         };
 //        dikali2.accept(4);
+
         nums.forEach(dikali2);
 
         System.out.println("====");
