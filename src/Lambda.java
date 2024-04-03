@@ -54,8 +54,6 @@ public class Lambda{
         });
         System.out.println("====");
         nums.forEach(number -> System.out.println(number * 2));
-        
-
 
 
     }
