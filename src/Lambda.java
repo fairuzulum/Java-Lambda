@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+import java.util.List;
 import java.util.function.Consumer;
 import java.util.function.Function;
 
@@ -34,6 +36,23 @@ public class Lambda{
         Function<Integer, Boolean> isOdd = number -> number % 2 == 1;
         System.out.println(isOdd.apply(11));
 
+
+        List<Integer> nums = new ArrayList<>(List.of(1,2,3,4,5,6));
+
+        Consumer<Integer> dikali2 = number -> {
+            int result = number * 2;
+            System.out.println(result);
+        };
+//        dikali2.accept(4);
+        nums.forEach(dikali2);
+
+        System.out.println("====");
+        nums.forEach(number -> {
+            int result = number * 2;
+            System.out.println(result);
+        });
+        System.out.println("====");
+        nums.forEach(number -> System.out.println(number * 2));
         
 
 
